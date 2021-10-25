@@ -10,11 +10,11 @@ app.use(cors());
 app.use(express.json());
 app.use(serveStatic(__dirname + '/vehicle-app-mono/build'));
 
-// const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI;
 
 // connect to mongoose
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/vehiclesDB',
+  uri || 'mongodb://localhost/vehiclesDB',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
