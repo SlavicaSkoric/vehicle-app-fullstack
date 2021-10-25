@@ -25,7 +25,7 @@ export const Table = () => {
   const fetchVehiclesData = async () => {
     const response = await axios
       // heroku fix
-      .get('https://vehicle-app-fullstack.herokuapp.com')
+      .get('https://vehicle-app-fullstack.herokuapp.com:80')
       // hardcoded
       // .get('http://localhost:3001')
       .catch((err) => console.log(err));

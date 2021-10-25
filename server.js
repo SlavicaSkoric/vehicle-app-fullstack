@@ -26,5 +26,5 @@ app.use('/', require('./routes/vehiclesRoute'));
 const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
-  console.log('express server is running, you are connected');
+  console.log('express server is running, you are connected at port ' + port);
 });
