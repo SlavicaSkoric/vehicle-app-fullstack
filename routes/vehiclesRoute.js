@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Vehicle = require('../models/vehicleModel');
+// heroku fix
+const path = require('path');
+const Vehicle = require(path.join(__dirname, '../models/vehicleModel'));
+// hardcoded path to model
+// const Vehicle = require('../models/vehicleModel');
 
 router.route('/').post((req, res) => {
   const vehicleMake = req.body.vehicleMake;

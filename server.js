@@ -3,11 +3,14 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
-
-const uri = process.env.MONGODB_URI;
+const path = require('path');
+const serveStatic = require('serve-static');
 
 app.use(cors());
 app.use(express.json());
+app.use(serveStatic(__dirname + '/vehicle-app-mono/build'));
+
+const uri = process.env.MONGODB_URI;
 
 // connect to mongoose
 mongoose.connect(
@@ -20,6 +23,8 @@ mongoose.connect(
 // require route
 app.use('/', require('./routes/vehiclesRoute'));
 
-app.listen(process.env.PORT || 3001, () => {
+const port = process.env.PORT || 3001;
+
+app.listen(port, () => {
   console.log('express server is running, you are connected');
 });
