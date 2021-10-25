@@ -1,6 +1,6 @@
 Vehicle App
 
-Mono Task
+Task for Mono d.o.o.
 
 MERN Full Stack Solution
 
@@ -12,16 +12,7 @@ Tech stack includes:
 - React-based front end
 - Express-based back end
 - DB hosted on MongoDB Atlas
-
-- NPM packages used:
-
-- axios
-- bootstrap
-- cors
-- dotenv
-- express
-- mongoose
-- react-table
+- NPM packages used: axios, bootstrap, cors, dotenv, express, mongoose, react-table
 
 GitHub repo for code review:
 https://github.com/SlavicaSkoric/vehicle-app-fullstack
@@ -34,5 +25,4 @@ TO DO LIST:
 - outsource state management to MobX
 - enforce the naming conventions required
 - beautify & optimize the final product code
-- optimize production pipeline (connect GitHub and Heroku repos)
 - provide an easy switch between dev & prod environments
