@@ -14,17 +14,10 @@ const uri = process.env.MONGODB_URI;
 
 // connect to mongoose
 mongoose.connect(
-  uri || 'mongodb://localhost/vehiclesDB',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  }
   // hardcoded connection to mongodb atlas
   // 'mongodb+srv://minacula13:mi57n13ami57n13a@cluster0.s7phe.mongodb.net/vehiclesDB'
   // heroku fix
-  // uri
+  uri
 );
 
 // require route
