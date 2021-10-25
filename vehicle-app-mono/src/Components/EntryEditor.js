@@ -32,6 +32,8 @@ function EntryEditor() {
     axios.post('https://vehicle-app-fullstack.herokuapp.com', newVehicle);
     // hardcoded
     // axios.post('http://localhost:3001', newVehicle);
+
+    alert('You have successfully added the vehicle!');
   }
 
   return (
