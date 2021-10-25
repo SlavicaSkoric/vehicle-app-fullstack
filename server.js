@@ -14,6 +14,6 @@ mongoose.connect(
 // require route
 app.use('/', require('./routes/vehiclesRoute'));
 
-app.listen(3001, function () {
-  console.log('express server is running on port 3001');
+app.listen(5000, function () {
+  console.log('express server is running on port 5000');
 });
