@@ -21,7 +21,7 @@ router.route('/').post((req, res) => {
   newVehicle.save();
 });
 
-router.route('/getVehicles').get((req, res) => {
+router.route('/vehicles').get((req, res) => {
   Vehicle.find().then((foundVehicles) => res.json(foundVehicles));
 });
 
